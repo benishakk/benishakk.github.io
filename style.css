@@ -1,97 +1,154 @@
-body {
-    font-family: Helvetica, Arial, sans-serif;
-    margin: 0px;
-    font-size: 1.5vw;
-}
-
+/* Font definitions */
 @font-face {
-    font-family: 'CustomFontName';
-    src: url('fonts/custom-font-file.otf') format('opentype'),
-         url('fonts/custom-font-file.ttf') format('truetype');
+    font-family: "SportingStrategy";
+    src: url("fonts/SportingStrategy-BLdgG.ttf") format('truetype');
     font-weight: normal;
     font-style: normal;
 }
 
-
-ul {
-    margin: 0px;
+@font-face {
+    font-family: "SportingStrategy";
+    src: url("fonts/SportingStrategyBoldItalic-6R89o.ttf") format('truetype');
+    font-weight: bold;
+    font-style: italic;
 }
 
-body > header {
-     background-color: darkorange;
-     display: flex;
-     height: 12vh;
-     align-items: center;
-     justify-content: space-around;
+@font-face {
+    font-family: "SportingStrategy";
+    src: url("fonts/SportingStrategyHollowItalic-9MGaZ.ttf") format('truetype');
+    font-weight: normal;
+    font-style: italic;
 }
 
-#nav-ul {
-    display: flex;
+/* General body styling */
+body {
+    font-family: 'Anton', sans-serif; /* Use Anton font for body text */
+    margin: 0;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f4;
 }
 
-#nav-ul > li {
-    padding: 8px;
-    margin: 16px;
+/* Header styling */
+header {
+    background-color: #1e1e1e;
+    color: white;
+    padding: 20px;
+    text-align: center;
 }
 
-body > header > nav > ul { 
+/* Logo styling */
+#logo {
+    font-family: "SportingStrategy", sans-serif;
+    font-size: 3em;
+    margin: 0;
+}
+
+/* Title parts styling */
+.title-part {
+    display: inline;
+    font-weight: bold;
+}
+
+/* White text for "Chasing" */
+.title-part.white {
+    color: white;
+    text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.5);
+}
+
+/* Gold text for "Gold" with white outline */
+.title-part.gold {
+    color: #FFD700; /* Gold color */
+    text-shadow:
+        1px 1px 0px white,
+        -1px -1px 0px white,
+        1px -1px 0px white,
+        -1px 1px 0px white;
+}
+
+/* Navigation styling */
+nav ul {
     list-style: none;
-    text-decoration: none;
+    padding: 0;
 }
 
-.navbutton {
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
     color: white;
     text-decoration: none;
-    padding: 12px;
-    border: 1px solid white;
-    border-radius: 7%;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1.2em;
+    transition: background-color 0.3s ease;
 }
 
-body > main article {
-    width: 70%;
-    margin: auto;
+nav ul li a:hover {
+    background-color: #333;
 }
 
-#main-content {
-    display: flex;
-    justify-content: space-around;
+/* Main content styling */
+main {
+    padding: 20px;
 }
 
-#main-content > div {
-width: 70%;
-}
-
-main-content aside {
-    width: 20%
-}
-
-form {
-    text-align: center;
+section {
+    margin-bottom: 20px;
 }
 
 h2 {
-    text-align: center;
+    color: #1e1e1e;
+    font-size: 2em;
 }
 
-body > footer {
-    background-color: orange;
-    display: flex;
+ul {
+    list-style: disc;
+    padding-left: 20px;
 }
 
-img {
-    border-radius: 50%;
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-#footer-ul {
-    display: flex;
-   list-style: none;
+form label {
+    display: block;
+    margin-bottom: 8px;
 }
 
-#footer-ul > div > li {
-    margin-left: 12px;
+form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
 }
 
-#footer-ul > div > li > a {
-    text-decoration: none;
+form input[type="submit"] {
+    background-color: #1e1e1e;
     color: white;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 1em;
+}
+
+form input[type="submit"]:hover {
+    background-color: #333;
+}
+
+/* Footer styling */
+footer {
+    background-color: #1e1e1e;
+    color: white;
+    text-align: center;
+    padding: 10px;
 }
