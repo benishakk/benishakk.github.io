@@ -4,18 +4,14 @@ body {
     font-size: 1.5vw;
 }
 
-#logo {
-    margin: 0px;
-    padding: 8px;
-    font-family: "Fredoka One", sans-serif;
-    width: 16%;
-    color: orangered;
-    text-shadow: 
-    1px 1px 0px white,
-    -1px -1px 0px white,
-    1px -1px 0px white,
-    -1px 1px 0px white;
+@font-face {
+    font-family: 'CustomFontName';
+    src: url('fonts/custom-font-file.otf') format('opentype'),
+         url('fonts/custom-font-file.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
 }
+
 
 ul {
     margin: 0px;
